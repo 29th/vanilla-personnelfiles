@@ -2,7 +2,7 @@
 
 class PersonnelFileModel extends Gdn_Model {
     const APIBaseURL = 'http://api.29th.org';
-    const APIMembersResource = '/members';
+    const APIMembersResource = '/members/view';
     
     public function GetByID($ForumMemberID) {
         $response = $this->CallAPI(self::APIBaseURL . self::APIMembersResource, array('forum_member_id' => $ForumMemberID));
